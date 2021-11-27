@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+.icones-acao{
+    text-align: end;
+    padding-top: 8px;
+    z-index: 999999;
+}
+
+.a-icones-acao{
+    padding: 5px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.custom-form-user{
+    top: 9px !important;
+
+}
