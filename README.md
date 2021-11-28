@@ -128,13 +128,13 @@ http://127.0.0.1:8888/
 
 - User: daniel@daniel
 - Password: 12345678
-- 
+_________________
 - User: ruth@ruth
 - Password: 12345678
-- 
+_________________
 - User: lucas@lucas
 - Password: 12345678
-- 
+_________________
 - User: Paulo@Paulo
 - Password: 12345678
 
