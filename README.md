@@ -4,6 +4,9 @@
 git clone https://github.com/DanielAlbernaz/projeto_dicas_carros.git
 ```
 ```
+cd projeto_dicas_carros
+```
+```
 composer install
 ```
 ```
@@ -22,14 +25,14 @@ php artisan key:generate
 Dentro do nosso .ENV da pasta raiz do projeto configuramos nossa base de dados de acordo com o laradock (container)
 
 .ENV pasta raiz:
-
-- DB_CONNECTION=mysql
-- DB_HOST=mysql
-- DB_PORT=3306
-- DB_DATABASE=projeto_dicas
-- DB_USERNAME=root
-- DB_PASSWORD=root
-
+```
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=projeto_dicas
+DB_USERNAME=root
+DB_PASSWORD=root
+```
 ## Configurando o Docker (laradock)
 Dentro da pasta raiz do projeto, rodar comandos para configuração do laradock:
 
@@ -70,10 +73,6 @@ MYSQL_ROOT_PASSWORD=root
 MYSQL_ENTRYPOINT_INITDB=./mysql/docker-entrypoint-initdb.d
 ```
 ## PHP MY ADMIN 
-
--  Accepted values: mariadb - mysql
-
-- PMA_DB_ENGINE=mysql
 
  Credentials/Port:
 
