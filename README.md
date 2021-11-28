@@ -1,35 +1,36 @@
 ## Documentação para rodar configurar e usar a aplicação
 
-git clone https://github.com/DanielAlbernaz/projeto_dicas_carros.git
-composer install
-npm install
-npm run dev
-cp .env.example .env
-php artisan key:generate
+- git clone https://github.com/DanielAlbernaz/projeto_dicas_carros.git
+- composer install
+- npm install
+- npm run dev
+- cp .env.example .env
+- php artisan key:generate
 
 Dentro do nosso .ENV da pasta raiz do projeto configuramos nossa base de dados de acordo com o laradock (container)
 
 .ENV pasta raiz:
 
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=projeto_dicas
-DB_USERNAME=root
-DB_PASSWORD=root
+- DB_CONNECTION=mysql
+- DB_HOST=mysql
+- DB_PORT=3306
+- DB_DATABASE=projeto_dicas
+- DB_USERNAME=root
+- DB_PASSWORD=root
 
 ##Configurando o Docker (laradock)
 Dentro da pasta raiz do projeto, rodar comandos para configuração do laradock:
 
-git clone https://github.com/Laradock/laradock.git
-cd laradock
-cp .env.example .env
+- git clone https://github.com/Laradock/laradock.git
+- cd laradock
+- cp .env.example .env
 
 ## Agora subistituir as configurações (dentro do .ENV no diretorio laradock) dos container usado abaixo para não haver conflitos de portas:
 
 .ENV laradock:
 
 ## Container usados NGINX, MYSQL, PHP MY ADMIN
+
 ## NGINX 
 
 - NGINX_HOST_HTTP_PORT=8888
@@ -52,11 +53,11 @@ cp .env.example .env
 
 ## PHP MY ADMIN 
 
-## Accepted values: mariadb - mysql
+-  Accepted values: mariadb - mysql
 
 - PMA_DB_ENGINE=mysql
 
-# Credentials/Port:
+## Credentials/Port:
 
 - PMA_USER=default
 - PMA_PASSWORD=secret
